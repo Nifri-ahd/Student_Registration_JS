@@ -1,0 +1,27 @@
+<h1>Student Registration System</h1>
+<br>
+{{> messages }}
+{{#if email}}
+<h2>{{ username }}'s profile</h2><br>
+<table class="table">
+  <tr>
+    <td> First Name:</td>
+    <td>{{ firstname }}</td>
+  </tr>
+  <tr>
+    <td>Last Name:</td>
+    <td>{{ lastname }}</td>
+  </tr>
+  <tr>
+    <td>Age:</td>
+    <td>{{ age }}</td>
+  </tr>
+  <tr>
+    <td>Country:</td>
+    <td>{{ country }}</td>
+  </tr>
+</table>
+{{/if}}
+   <p class="text-right">
+      <a href="/auth/logout">Home</a>
+   </p>

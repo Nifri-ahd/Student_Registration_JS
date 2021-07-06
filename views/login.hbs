@@ -1,0 +1,27 @@
+
+<h1>Student Registration System</h1>
+
+<h2>Login</h2>
+
+{{> messages }}
+
+<form action="/auth/login" method="POST">
+  <div class="form-group">
+    <label for="email">Email:</label>
+    <input type="email" class="form-control" name="email" id="email">
+  </div>
+  <div class="form-group">
+    <label for="username">Username:</label>
+    <input type="text" class="form-control" name="username" id="username">
+  </div>
+  <div class="form-group">
+    <label for="password">Password:</label>
+    <input type="password" class="form-control" name="password" id="password">
+  </div>
+  <button class="btn btn-primary">Login</button>
+</form>
+<br>
+<p>Or <a href="/auth/register">Register</a> an account.</p>
+   <p class="text-right">
+      <a href="/auth/logout">Home</a>
+   </p>

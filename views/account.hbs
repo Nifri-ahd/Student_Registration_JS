@@ -1,0 +1,24 @@
+<h1>Student Registration System</h1>
+<br>
+<h2>Edit your profile</h2>
+<form action="/users" method="POST">
+  <div class="form-group">
+    <label for="name"> First Name:</label>
+    <input type="text" class="form-control" name="firstname" id="firstname" value="{{ firstname }}">
+  </div>
+  <div class="form-group">
+    <label for="name">Last Name:</label>
+    <input type="text" class="form-control" name="lastname" id="lastname" value="{{ lastname }}">
+  </div>
+  <div class="form-group">
+    <label for="name">Age:</label>
+    <input type="text" class="form-control" name="age" id="age" value="{{ age }}">
+  </div>
+  <div class="form-group">
+    <label for="name">Country:</label>
+    <input type="text" class="form-control" name="country" id="country" value="{{ country }}">
+  </div>
+  <button class="btn btn-primary">Update</button>
+</form>
+<br>
+<p><a href="/users/{{username}}" target="_blank">View your profile</a></p>

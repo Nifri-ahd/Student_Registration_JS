@@ -1,0 +1,13 @@
+<h1>Student Registration System</h1>
+<br>
+<h2>Recent User Profiles:</h2>
+
+<ul>
+{{#each recent}}
+  <li><a href="/users/{{username}}">{{email}}</a></li>
+{{/each}}
+</ul>
+
+<br>
+<p><a href="/auth/login">Login</a> to update your profile</p>
+<p><a href="/auth/register">Register an account</a></p>
